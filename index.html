@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Géneros Musicales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="encabezado">
+        <img src="./img/vinilo.png" alt="Logo de MusicSpace" class="logo girar">
+        <h1 class="titulo">MusicSpace</h1>
+    </div>
+    <main>
+        <div class="contenedor">
+            <section class="buscador">
+                <input type="text" id="nombre-artista" placeholder="🔍Buscar artista">
+                <button class="" onclick="buscarArtista()">Buscar</button>
+            </section>
+            
+            <section class="categorias">
+                <h2>Categorías</h2>
+                <div id="categorias"></div>
+            </section>
+            <section class="artistas">
+                <h2>Artistas</h2>
+                <div id="artistas"></div>
+            </section>
+             <section class="barra-progreso">
+                <div id="progreso" class="progreso">0/10</div>
+            </section>
+            <section class="albumes">
+                <h2>Álbumes</h2>
+                <div id="albumes"></div>
+            </section>
+           
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/funciones.js"></script>
+</body>
+</html>
